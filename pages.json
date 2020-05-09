@@ -1,10 +1,16 @@
 {
 	"pages": [
 		{
-			"path": "",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"path": "pages/tabBar/message"
+		},
+		{
+			"path":"pages/tabBar/address-list"
+		},
+		{
+			"path":"pages/tabBar/application"
+		},
+		{
+			"path":"pages/tabBar/my"
 		}
 	],
 	"globalStyle": {
@@ -18,10 +24,28 @@
 		"backgroundColor": "#fff",
 		"list": [
 			{
-				"pagePath": "",
-				"text": "",
-				"iconPath": "",
-				"selectedIconPath": ""
+				"pagePath": "pages/tabBar/message",
+				"text": "消息",
+				"iconPath": "static/message.png",
+				"selectedIconPath": "static/message_on.png"
+			},
+			{
+				"pagePath":"pages/tabBar/application",
+				"text":"应用",
+				"iconPath":"static/application.png",
+				"selectedIconPath":"static/application_on.png"
+			},
+			{
+				"pagePath":"pages/tabBar/address-list",
+				"text":"通讯录",
+				"iconPath":"static/address-list.png",
+				"selectedIconPath":"static/address-list_on.png"
+			},
+			{
+				"pagePath":"pages/tabBar/my",
+				"text": "我的",
+				"iconPath":"static/my.png",
+				"selectedIconPath":"static/my_on.png"
 			}
 		]
 	}
