@@ -1,0 +1,80 @@
+
+.main.data-v-08fe1340{
+	background-color: #46b3e6;
+	height: 100%;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-align-content: center;
+	        align-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.logo.data-v-08fe1340{
+	margin: 20rpx 0;
+}
+.logo image.data-v-08fe1340{
+	width: 332rpx;
+	height: 113rpx;
+}
+.form.data-v-08fe1340{
+	width: 90%;
+	height: 370rpx;
+	border-radius: 10rpx;
+	background-color: #fff;
+	font-size: 30rpx;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-align-content: stretch;
+	        align-content: stretch;
+	margin: 30rpx 0;
+	color: #666;
+}
+.form .form-input.data-v-08fe1340{
+	margin: 30rpx 0;
+}
+.form-input text.data-v-08fe1340, .form-input input.data-v-08fe1340{
+	padding: 20rpx 0 16rpx 18rpx;
+}
+.data-v-08fe1340::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-size: 1rem;
+    color: #ccc;
+}
+.data-v-08fe1340:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size: 1rem;
+    color: #ccc;
+}
+.data-v-08fe1340::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: 1rem;
+    color: #ccc;
+}
+.data-v-08fe1340:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 1rem;
+    color: #ccc;
+}
+.line.data-v-08fe1340{
+	width: 100%;
+	height: 2rpx;
+	border-bottom: 2rpx solid #ccc;
+}
+.button.data-v-08fe1340{
+	width: 90%;
+}
+button.data-v-08fe1340{
+	background-color: #f39422;
+	color: #fff;
+	height: 80rpx;
+	line-height: 80rpx;
+	font-size: 36rpx;
+}
+

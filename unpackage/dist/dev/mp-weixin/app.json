@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/component/login/login",
     "pages/tabBar/message",
     "pages/tabBar/address-list",
     "pages/tabBar/application",
@@ -47,5 +48,6 @@
       "desc": "演示定位能力"
     }
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap43.json"
 }

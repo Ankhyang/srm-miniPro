@@ -1,6 +1,6 @@
 {
     "name" : "srm-miniPro",
-    "appid" : "wxafcf120f30a43145",
+    "appid" : "",
     "description" : "应用描述",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -83,7 +83,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wxafcf120f30a43145",
         "setting" : {
             "urlCheck" : false
         },

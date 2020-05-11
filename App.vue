@@ -2,6 +2,9 @@
     export default {
         onLaunch: function() {
             console.log('App Launch');
+			uni.reLaunch({
+				url: 'pages/component/login/login.vue'
+			})
         },
         onShow: function() {
             console.log('App Show')

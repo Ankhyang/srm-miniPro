@@ -1,6 +1,19 @@
 {
 	"pages": [
 		{
+			"path": "pages/component/login/login",
+			"style": {
+				"navigationBarBackgroundColor": "#000",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "云之佳",
+				"backgroundColor":"#000",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
 			"path": "pages/tabBar/message"
 		},
 		{

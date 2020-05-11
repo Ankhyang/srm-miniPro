@@ -1,0 +1,23 @@
+{
+  "id": "1811768",
+  "name": "srm-miniPro",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "srm小程序",
+  "glyphs": [
+    {
+      "icon_id": "14433132",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "14646654",
+      "name": "密码",
+      "font_class": "mima-copy",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    }
+  ]
+}
