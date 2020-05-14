@@ -14,6 +14,12 @@
 			}
 		},
 		{
+			"path":"pages/component/my/my_information",
+			"style":{
+				"navigationBarTitleText": "我的信息"
+			}
+		},
+		{
 			"path": "pages/tabBar/message"
 		},
 		{
@@ -24,6 +30,30 @@
 		},
 		{
 			"path":"pages/tabBar/my"
+		},
+		{
+			"path":"pages/component/my/account_security",
+			"style":{
+				"navigationBarTitleText": "账号与安全"
+			}
+		},
+		{
+			"path":"pages/component/my/message_notification",
+			"style":{
+				"navigationBarTitleText": "消息通知"
+			}
+		},
+		{
+			"path":"pages/component/my/service_counter",
+			"style":{
+				"navigationBarTitleText": "服务台信息"
+			}
+		},
+		{
+			"path":"pages/component/my/about",
+			"style":{
+				"navigationBarTitleText": "关于"
+			}
 		}
 	],
 	"globalStyle": {

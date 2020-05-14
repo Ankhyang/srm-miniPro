@@ -6,16 +6,17 @@
 		<view class="uni-flex uni-row form">
 			<view class="flex-item form-input">
 				<image src="../../../static/user.png" mode=""></image>
-				<input type="text" placeholder="请输入用户名">
+				<input type="text" v-model="user_name" placeholder="请输入用户名">
 			</view>
 			<view class="flex-item form-input">
 				<image src="../../../static/pwd.png" mode=""></image>
-				<input type="text" password placeholder="请输入密码">
+				<input type="text" password v-model="pwd" placeholder="请输入密码" @confirm="formSubmit">
 			</view> 
 		</view>
 		<view class="button">
-			<button>登录</button>
+			<button @tap="formSubmit">登录</button>
 		</view>
+		<!-- 波浪特效 -->
 		<view class="wave-wrapper">
 			<i class="wave wave1"></i>
 			<i class="wave wave2"></i>
@@ -24,6 +25,53 @@
 </template>
 
 <script>
+	import { mapState, mapActions } from 'vuex'
+	import CryptoJS from '@/common/js/CryptoJS.js'
+	export default {
+		data(){
+			return {
+				user_name: 'jcloud-admin',
+				pwd: ''
+			}
+		},
+		computed:{
+			...mapState(['hasLogin'])
+		},
+		methods:{
+			...mapActions(['login']),
+			async formSubmit() {
+				// 验证输入是否规范
+				let login_name = this.user_name.trim(), password = this.pwd.trim()
+				if(!login_name) {
+					uni.showToast({
+						title: '请输入用户名',
+						icon: 'none'
+					})
+					return
+				}
+				if(!password) {
+					uni.showToast({
+						title: '请输入密码',
+						icon: 'none'
+					})
+					return
+				}
+				// 密码转换
+				password = CryptoJS.MD5(password).toString(CryptoJS.enc.Hex)
+				let res = await this.$service.user.tokens({
+					login_name,
+					password
+				})
+				if(res.success) {
+					// 存入store
+					this.login(res.data)
+					uni.switchTab({
+						url: '/pages/tabBar/message'
+					})
+				}
+			}
+		}
+	}
 </script>
 
 <style scoped>
@@ -32,6 +80,7 @@
 		height: 100%;
 		position: relative;
 		background-color: #e6f8f9;
+		overflow: hidden;
 	}
 	.logo{
 		width: 100%;
