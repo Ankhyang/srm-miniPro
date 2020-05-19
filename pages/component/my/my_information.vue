@@ -14,7 +14,7 @@
 			</view> -->
 			<view class="item">
 				<image src="../../../static/position.png" mode=""></image>
-				<text v-if="userInfo.organization">{}{{userInfo.organization.org_name}}</text>
+				<text v-if="userInfo.organization">{{userInfo.organization.org_name}}</text>
 			</view>
 			<view class="item">
 				<image src="../../../static/work_no.png" mode=""></image>

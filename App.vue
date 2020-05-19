@@ -1,10 +1,21 @@
 <script>
+	import Token from '@/common/js/token.js'
+	import { mapActions } from 'vuex'
     export default {
+		methods:{
+			...mapActions(['login', 'setUserInfo'])
+		},
         onLaunch: function() {
             console.log('App Launch');
-			uni.reLaunch({
-				url: 'pages/component/login/login.vue'
-			})
+			// 获取token，存到缓存里面，再设置用户信息
+			let token = Token.getTokenInfo()
+			if(token) {
+				this.login(token)
+				let user = uni.getStorageSync('userInfo')
+				if(user) {
+					this.setUserInfo(user)
+				}
+			}
         },
         onShow: function() {
             console.log('App Show')
@@ -21,7 +32,6 @@
 <style>
     /* #ifndef APP-PLUS-NVUE */
     /* uni.css - 通用组件、模板样式库，可以当作一套ui库应用 */
-    /* @import './common/uni.css'; */
 
     /* 以下样式用于 hello uni-app 演示所需 */
     page {

@@ -1,6 +1,32 @@
 {
 	"pages": [
 		{
+			"path": "pages/tabBar/message"
+		},
+		{
+			"path":"pages/component/application/dailyOffice/approval_list"
+		},
+		{
+			"path":"pages/component/application/dailyOffice/approval_process",
+			"style":{
+				"navigationBarTitleText":"审批",
+				"navigationBarBackgroundColor": "#0066CC",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path":"pages/component/application/dailyOffice/approval_history",
+			"style":{
+				"navigationBarTitleText":"已审批"
+			}
+		},
+		{
+			"path":"pages/component/application/dailyOffice/chart",
+			"style":{
+				"navigationBarTitleText":"报表"
+			}
+		},
+		{
 			"path": "pages/component/login/login",
 			"style": {
 				"navigationBarBackgroundColor": "#000",
@@ -20,13 +46,10 @@
 			}
 		},
 		{
-			"path": "pages/tabBar/message"
+			"path":"pages/tabBar/application"
 		},
 		{
 			"path":"pages/tabBar/address-list"
-		},
-		{
-			"path":"pages/tabBar/application"
 		},
 		{
 			"path":"pages/tabBar/my"
