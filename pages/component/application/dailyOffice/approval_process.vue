@@ -48,7 +48,7 @@
 		width: inherit;
 		height: 140rpx;
 		position: relative;
-		background-color: #0066CC;
+		background-color: #46b3e6;
 	}
 	.approval{
 		width: 84%;

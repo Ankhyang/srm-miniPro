@@ -115,7 +115,6 @@ const http = {
 		url = encodeURI(url)
 		let hosts = hostConfig.getUrl(module)
 		let header = getHeader(method, vorg, hosts, url)
-		console.log('header', header)
 		return await new Promise((resolve, reject)=>{
 			uni.request({
 				url: hosts + url,

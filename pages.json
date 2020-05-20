@@ -1,16 +1,16 @@
 {
 	"pages": [
 		{
-			"path": "pages/tabBar/message"
+			"path":"pages/component/application/dailyOffice/approval_list"
 		},
 		{
-			"path":"pages/component/application/dailyOffice/approval_list"
+			"path": "pages/tabBar/message"
 		},
 		{
 			"path":"pages/component/application/dailyOffice/approval_process",
 			"style":{
 				"navigationBarTitleText":"审批",
-				"navigationBarBackgroundColor": "#0066CC",
+				"navigationBarBackgroundColor": "#46b3e6",
 				"navigationBarTextStyle": "white"
 			}
 		},

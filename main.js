@@ -5,6 +5,7 @@ import './static/iconfont/iconfont.css'
 
 // import pageHead from './components/page-head.vue'
 // import pageFoot from './components/page-foot.vue'
+import loadMore from './components/load-more.vue'
 
 import store from './store'
 import service from './common/js/service.js'
@@ -17,6 +18,7 @@ Vue.prototype.$service = service
 // Vue.component('page-head', pageHead)
 // Vue.component('page-foot', pageFoot)
 // Vue.component('uLink', uLink)
+Vue.component('load-more', loadMore)
 
 App.mpType = 'app'
 

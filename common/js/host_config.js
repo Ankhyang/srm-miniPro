@@ -34,6 +34,9 @@ export default{
 			case 'purchase':
 				url = this.purchaseUrl
 				break
+			case 'fw':
+				url = this.flowUrl
+				break
 			case 'baseData':
 				url = this.baseDataUrl
 				break
