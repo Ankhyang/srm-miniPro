@@ -1,10 +1,13 @@
 {
 	"pages": [
 		{
+			"path": "pages/tabBar/message"
+		},
+		{
 			"path":"pages/component/application/dailyOffice/approval_list"
 		},
 		{
-			"path": "pages/tabBar/message"
+			"path":"pages/component/application/dailyOffice/approval_info"
 		},
 		{
 			"path":"pages/component/application/dailyOffice/approval_process",

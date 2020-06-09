@@ -67,6 +67,9 @@
         font-size: 38rpx;
         color: #808080;
     }
-
     /* #endif*/
+	.dialog_placeholder{
+		font-size: 36rpx !important;
+		color: #666 !important;
+	}
 </style>

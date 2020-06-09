@@ -30,7 +30,8 @@ const work_execute = {
 		if(title) where = `&$filter= title like %${title}%`
 		return http.request('GET', true, '', 'fw', 
 		`/v0.1/work_execute/query_task?$offset=${getOffset(pageIndex,limit)}&$limit=${limit}&$count=true` + where)
-	}
+	},
+	info: (execution_id) => http.request('GET', true, '', 'fw', `/v0.1/work_execute/query_execution_data/${execution_id}`)
 }
 
 export default {

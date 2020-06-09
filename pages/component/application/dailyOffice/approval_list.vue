@@ -2,7 +2,7 @@
 	<view class="container">
 		<scroll-view scroll-y :class="change" :style="{'height': scrollHeight+'px'}" @scrolltolower="loadData">
 			<view class="list">
-				<navigator class="item" v-for="(item, index) in list" :key="index" :url="`/pages/component/application/dailyOffice/approval_info?apply=true&id=${item.id}&execution_id=${item.execution_id}`">
+				<navigator class="item" v-for="(item, index) in list" :key="index" hover-class="none" :url="`/pages/component/application/dailyOffice/approval_info?apply=true&id=${item.id}&execution_id=${item.execution_id}`">
 					<view class="head">
 						<text class="title">{{item.title}}</text>
 						<text class="status">待审批</text>
@@ -64,7 +64,6 @@
 				let res = await this.$service.work_execute.list(pageIndex, this.pageSize, this.title)
 				this.loadingType = 0
 				// 获取数据
-				console.log(res)
 				if(res.success) {
 					let {items} = res.data
 					if(items.length > 0) {
@@ -87,7 +86,6 @@
 				}
 			},
 			async loadUserName(user_id, index) {
-				console.log(index)
 				if(!this.userAddArray.hasOwnProperty(user_id)) {
 					this.userAddArray[user_id] = []
 					this.userAddArray[user_id].push(index)
